@@ -1,0 +1,16 @@
+<div class="flex">
+    <div class="">
+        <p class="text-center">Signals</p>
+      
+        <h1>Counter {{ counter() }}</h1>
+        <button class="btn" (click)="decrement()">decrement</button>
+        <button class="btn" (click)="increment()">increment</button>
+      
+        <div class="divider"></div>
+      
+        <ul class="overflow">
+          <li *ngFor="let item of counters()">{{ item }}</li>
+        </ul>
+
+    </div>
+</div>
