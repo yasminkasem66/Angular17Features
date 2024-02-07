@@ -1,8 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 .flex {
   margin: 20px;
@@ -39,9 +38,12 @@
   position: relative;
 
   $border: 2px;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid $border transparent;
+  /* !importanté */
   border-radius: 1em;
+
   &:before {
     content: "";
     position: absolute;
@@ -50,8 +52,10 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
+    margin: -$border;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
     background: linear-gradient(to right, red, orange);
   }
 }
@@ -65,12 +69,10 @@
   border: 1px;
   border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(
-    180deg,
-    oklch(63.32% 0.24 31.68) 0%,
-    oklch(69.02% 0.277 332.77) 50%,
-    oklch(53.18% 0.28 296.97) 100%
-  );
+  border-image: linear-gradient(180deg,
+      oklch(63.32% 0.24 31.68) 0%,
+      oklch(69.02% 0.277 332.77) 50%,
+      oklch(53.18% 0.28 296.97) 100%);
   border-image-slice: 1;
 }
 
@@ -98,9 +100,12 @@
   box-sizing: border-box;
 
   $border: 5px;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid $border transparent;
+  /* !importanté */
   border-radius: 1em;
+
   &:before {
     content: "";
     position: absolute;
@@ -109,8 +114,10 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
+    margin: -$border;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
     background: linear-gradient(to right, red, orange);
   }
 }
