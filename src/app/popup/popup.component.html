@@ -1,0 +1,8 @@
+<button type="button" class="modal-btn"
+(click)="openPopup=true">open modal</button>
+
+<div class="popup" (click)="openPopup=false" *ngIf="openPopup" @popupParent>
+    <div class="popup__form">
+        sth
+    </div>
+</div>
